@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Instalar Tema - Nombre Apellido - UAI 2021</title>
+  <title>Instalar Tema - Taller de Producto 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://tallerproducto2021.github.io/favicon.png">
 
   
   
-  <link rel="stylesheet" href="/css/style.min.f0e8a07b924c4eb346cc63c50c2a3eb8c6f22d4243b6d6aff9f75d132af6c093.css">
+  <link rel="stylesheet" href="/css/style.min.4bf2e1cf946ddfd308bf9cec51fe9f552068d0a55c12d1cace81ec8c730d38b9.css">
   
 
   
@@ -90,6 +90,10 @@
   <h4>Docs</h4>
   <ul>
     
+    <li class="">
+      <a href="https://tallerproducto2021.github.io/docs/tutoriales-encargo0/">Tutoriales</a>
+    </li>
+    
     <li class="active ">
       <a href="https://tallerproducto2021.github.io/docs/instalar-tema/">Instalar Tema</a>
     </li>
@@ -113,15 +117,16 @@
 <div class="content ">
   <!-- raw HTML omitted -->
 <h2 id="crear-un-nuevo-sitio-hugo">Crear un nuevo sitio Hugo</h2>
+<p>Comando a utilizar para la creación de un nuevo sitio, utilizando la terminal de comandos.</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">hugo new site misitio
-</code></pre></div><p>Esto creará un nuevo sitio de Hugo en la carpeta <code>misitio</code>.</p>
-<h2 id="instalar-sitio-hugo">Instalar sitio Hugo</h2>
-<p>Copie o clone con git el sitio en la carpeta carpeta <code>misitio</code>.</p>
+</code></pre></div><p>Esto creará un nuevo sitio de Hugo en una carpeta con nombre <code>misitio</code>, este paso será necesario realizarlo sólo una vez, ya que este proceso automatizado genera una serie de archivos y carpetas que son la base del sitio web desarrollado con Hugo.</p>
+<h2 id="instalar-un-template-de-hugo">Instalar un template de Hugo</h2>
+<p>Copie o clone la carpeta del template del sitio en la carpeta <code>misitio/themes</code>.</p>
 <h2 id="ejecutar-hugo">Ejecutar Hugo</h2>
 <p>Para el desarrollo de manera local, ejecute el servidor incorporado con Hugo utilizando la terminal de comandos.</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">hugo server
-</code></pre></div><p>Ahora ingresa a <a href="http://localhost:1313"><code>localhost:1313</code></a> en la barra de URL de su navegador.</p>
-<p>Después de editar el contenido y generar el sitio web, obtenga el compilado de archivos web a través del siguiente comando en la terminal. Este comando generará una carpeta <code>public</code> al interior de la carpeta del sitio web.</p>
+</code></pre></div><p>Ahora ingrese a <a href="http://localhost:1313"><code>localhost:1313</code></a> en la barra de URL de su navegador.</p>
+<p>Después de editar el contenido y generar el sitio web, obtenga el compilado de archivos web a través del siguiente comando en la terminal. Este comando generará una carpeta <code>misitio/public</code> al interior de la carpeta del sitio web.</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">hugo
 </code></pre></div>
 </div>

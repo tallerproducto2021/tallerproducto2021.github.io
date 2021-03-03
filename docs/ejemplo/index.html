@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Ejemplo Shortcodes - Nombre Apellido - UAI 2021</title>
+  <title>Ejemplo Shortcodes - Taller de Producto 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://tallerproducto2021.github.io/favicon.png">
 
   
   
-  <link rel="stylesheet" href="/css/style.min.f0e8a07b924c4eb346cc63c50c2a3eb8c6f22d4243b6d6aff9f75d132af6c093.css">
+  <link rel="stylesheet" href="/css/style.min.4bf2e1cf946ddfd308bf9cec51fe9f552068d0a55c12d1cace81ec8c730d38b9.css">
   
 
   
@@ -91,6 +91,10 @@
   <ul>
     
     <li class="">
+      <a href="https://tallerproducto2021.github.io/docs/tutoriales-encargo0/">Tutoriales</a>
+    </li>
+    
+    <li class="">
       <a href="https://tallerproducto2021.github.io/docs/instalar-tema/">Instalar Tema</a>
     </li>
     
@@ -118,13 +122,14 @@
 <li><a href="#agregar-video-local-mp4">Agregar Video Local MP4</a></li>
 <li><a href="#agregar-galer%C3%ADa-fotos-lightbox">Galería Fotos Lightbox</a></li>
 <li><a href="#agregar-bot%C3%B3n-de-descarga">Botón de Descarga</a></li>
+<li><a href="#agregar-visor-de-archivos-pdf">Agregar Visor de PDF</a></li>
 </ul>
 <!-- raw HTML omitted -->
 <hr>
 <h3 id="agregar-iframe-de-fusion-360">Agregar Iframe de Fusion 360</h3>
 <div>
     <iframe 
-    src="https://myhub.autodesk360.com/ue2ce4e3a/shares/public/SH56a43QTfd62c1cd968edbffd1ceafd2764?mode=embed" 
+    src='https://myhub.autodesk360.com/ue2ce4e3a/shares/public/SH56a43QTfd62c1cd968edbffd1ceafd2764?mode=embed'
     width="100%" 
     height="450" 
     allowfullscreen="true" 
@@ -134,11 +139,11 @@
     </iframe>    
 </div>
 <h5 id="código-iframe-de-fusion-360-markdown">Código <code>Iframe de Fusion 360</code> Markdown</h5>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; iframe-fusion &gt;}}
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; iframe-fusion link=&#34;https://myhub.autodesk360.com/ue2ce4e3a/shares/public/SH56a43QTfd62c1cd968edbffd1ceafd2764?mode=embed&#34; &gt;}}
 </code></pre></div><h5 id="código-iframe-de-fusion-360-html-shortcode">Código <code>Iframe de Fusion 360</code> HTML Shortcode</h5>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;div&gt;
     &lt;iframe 
-    src=&#34;https://myhub.autodesk360.com/ue2ce4e3a/shares/public/SH56a43QTfd62c1cd968edbffd1ceafd2764?mode=embed&#34; 
+    src=&#39;{{ index .Params &#34;link&#34; }}&#39;
     width=&#34;100%&#34; 
     height=&#34;450&#34; 
     allowfullscreen=&#34;true&#34; 
@@ -155,11 +160,12 @@
     <video 
     width="100%" 
     height="450" 
-    autoplay muted loop controls preload>
+    loop controls preload>
     <source src="/img/video.mp4"  type="video/mp4">
     </video>
 </div>
 <h5 id="código-video-local-mp4-markdown">Código <code>Video Local MP4</code> Markdown</h5>
+<p>Carpeta de videos se encuentra en <code>/static/img</code></p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; video-local src=&#34;video.mp4&#34; &gt;}}
 </code></pre></div><h5 id="código-video-local-mp4-html-shortcode">Código <code>Video Local MP4</code> HTML Shortcode</h5>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;div&gt;
@@ -307,6 +313,8 @@
 </div>
 </p>
 <h5 id="código-galería-fotos-lightbox-markdown">Código <code>Galería Fotos Lightbox</code> Markdown</h5>
+<p>Carpeta de galeria se encuentra en <code>/static/img</code>. Es importante que cada galería de imágenes esté contenida en una carpeta.</p>
+<p>Para acceder a esa carpeta, se debe poner la ruta de acceso en el shortcode. Ejemplo con una carpeta llamada <code>galeria</code> dentro de <code>/static/img</code>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; gallery dir=&#34;/img/galeria/&#34; /&gt;}} {{&lt; load-photoswipe &gt;}}
 </code></pre></div><p><a href="#contenido-shortcodes">[Volver Arriba]</a></p>
 <!-- raw HTML omitted -->
@@ -336,7 +344,63 @@
     &lt;/div&gt;
 &lt;/a&gt;
 </code></pre></div><p><a href="#contenido-shortcodes">[Volver Arriba]</a></p>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="agregar-visor-de-archivos-pdf">Agregar visor de archivos PDF</h3>
 
+<iframe id='pdf-hugo' src='/pdf/documento.pdf'
+frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:100%; height:60vh;"></iframe>
+
+<button onclick="myFunction('pdf-hugo')" class="button button-primary mb-2" style="width: 100%;">Ver Pantalla Completa</button>
+
+<script>
+    function myFunction(id) {
+      document.getElementById(id).classList.add("full-screen");
+    }
+    document.addEventListener('keydown', function(event){
+	if(event.key === "Escape"){
+        document.getElementById('pdf-hugo').classList.remove("full-screen");
+	}
+});
+</script>
+
+<iframe id='ejemplo-adobe' src='https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:100%; height:60vh;"></iframe>
+
+<button onclick="myFunction('ejemplo-adobe')" class="button button-primary mb-2" style="width: 100%;">Ver Pantalla Completa</button>
+
+<script>
+    function myFunction(id) {
+      document.getElementById(id).classList.add("full-screen");
+    }
+    document.addEventListener('keydown', function(event){
+	if(event.key === "Escape"){
+        document.getElementById('ejemplo-adobe').classList.remove("full-screen");
+	}
+});
+</script>
+<h5 id="código-visor-de-archivos-pdf-markdown">Código <code>Visor de archivos PDF</code> Markdown</h5>
+<p>Ejemplo con PDF en carpeta <code>/static/pdf</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; pdf-viewer id=&#34;pdf-hugo&#34; link=&#34;/pdf/documento.pdf&#34; &gt;}}
+</code></pre></div><p>Ejemplo con PDF en link externo:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; pdf-viewer id=&#34;ejemplo-adobe&#34; link=&#34;https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf&#34; &gt;}}
+</code></pre></div><h5 id="código-visor-de-archivos-pdf-html-shortcode">Código <code>Visor de archivos PDF</code> HTML Shortcode</h5>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;iframe id=&#39;{{ index .Params &#34;id&#34; }}&#39; src=&#39;{{ index .Params &#34;link&#34; }}&#39;
+frameborder=&#34;0&#34; scrolling=&#34;yes&#34; seamless=&#34;seamless&#34; style=&#34;display:block; width:100%; height:60vh;&#34;&gt;&lt;/iframe&gt;
+
+&lt;button onclick=&#34;myFunction(&#39;{{ index .Params &#34;id&#34; }}&#39;)&#34; class=&#34;button button-primary mb-2&#34; style=&#34;width: 100%;&#34;&gt;Ver Pantalla Completa&lt;/button&gt;
+
+&lt;script&gt;
+    function myFunction(id) {
+      document.getElementById(id).classList.add(&#34;full-screen&#34;);
+    }
+    document.addEventListener(&#39;keydown&#39;, function(event){
+	if(event.key === &#34;Escape&#34;){
+        document.getElementById(&#39;{{ index .Params &#34;id&#34; }}&#39;).classList.remove(&#34;full-screen&#34;);
+	}
+});
+&lt;/script&gt;
+</code></pre></div>
 </div>
 </div>
 
