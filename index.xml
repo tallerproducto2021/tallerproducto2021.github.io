@@ -17,16 +17,7 @@
     </item>
     
     <item>
-      <title>Tutorial - Grasshopper</title>
-      <link>https://tallerproducto2021.github.io/docs/tutoriales-grasshopper/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://tallerproducto2021.github.io/docs/tutoriales-grasshopper/</guid>
-      <description>Video tutoriales Grasshopper.</description>
-    </item>
-    
-    <item>
-      <title>Tutorial - Keyshot</title>
+      <title>Tutorial 1.1 - Keyshot </title>
       <link>https://tallerproducto2021.github.io/docs/tutoriales-keyshot/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
@@ -35,7 +26,7 @@
     </item>
     
     <item>
-      <title>Tutorial 2 - Keyshot</title>
+      <title>Tutorial 1.2 - Keyshot</title>
       <link>https://tallerproducto2021.github.io/docs/tutoriales-keyshot2/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
@@ -44,11 +35,20 @@
     </item>
     
     <item>
-      <title>Tutorial 2 - Rhinoceros y Grasshopper</title>
+      <title>Tutorial 2.1 - Rhinoceros y Grasshopper</title>
       <link>https://tallerproducto2021.github.io/docs/tutoriales-modelado3d/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://tallerproducto2021.github.io/docs/tutoriales-modelado3d/</guid>
+      <description>Video tutoriales Grasshopper.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 2.2 - Grasshopper</title>
+      <link>https://tallerproducto2021.github.io/docs/tutoriales-grasshopper/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://tallerproducto2021.github.io/docs/tutoriales-grasshopper/</guid>
       <description>Video tutoriales Grasshopper.</description>
     </item>
     
@@ -62,12 +62,21 @@
     </item>
     
     <item>
-      <title>Tutorial Autodesk Fusion 360</title>
+      <title>Tutorial 4 - Fusion 360</title>
       <link>https://tallerproducto2021.github.io/docs/tutoriales-fusion360-moldes/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      <pubDate>Sun, 17 May 2020 19:30:08 +1000</pubDate>
       
       <guid>https://tallerproducto2021.github.io/docs/tutoriales-fusion360-moldes/</guid>
       <description>Video tutoriales de introducción a Fusion 360 - Moldes</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 5 - Grasshopper Origami</title>
+      <link>https://tallerproducto2021.github.io/docs/tutoriales-folding/</link>
+      <pubDate>Fri, 17 Apr 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://tallerproducto2021.github.io/docs/tutoriales-folding/</guid>
+      <description>Video tutorial para desarrollo de ejercicio Origami + Folding Techniques.</description>
     </item>
     
     <item>
