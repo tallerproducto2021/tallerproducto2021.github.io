@@ -71,7 +71,16 @@
     </item>
     
     <item>
-      <title>Tutorial 5 - Grasshopper Origami</title>
+      <title>Tutorial 5 - Impresion 3D</title>
+      <link>https://tallerproducto2021.github.io/docs/tutoriales-print3d/</link>
+      <pubDate>Fri, 17 Apr 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://tallerproducto2021.github.io/docs/tutoriales-print3d/</guid>
+      <description>Video tutorial para desarrollo de ejercicio de procesado y slicing para impresión 3D</description>
+    </item>
+    
+    <item>
+      <title>Tutorial 6 - Grasshopper Origami</title>
       <link>https://tallerproducto2021.github.io/docs/tutoriales-folding/</link>
       <pubDate>Fri, 17 Apr 2020 19:30:08 +1000</pubDate>
       
